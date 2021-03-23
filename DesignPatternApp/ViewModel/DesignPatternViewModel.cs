@@ -131,7 +131,7 @@ namespace DesignPatternApp.ViewModel
         /// </summary>
         private void InitialiserDonnees()
         {
-            this.ListeDP = new LoaderDesignPattern(this).ObtenirListeDP();
+            this.ListeDP = LoaderDesignPattern.ObtenirListeDP();
             if (this.ListeDP != null && this.ListeDP.Count > 0)
             {
                 this.DPSelectionne = this.ListeDP[0];
@@ -147,7 +147,7 @@ namespace DesignPatternApp.ViewModel
             this.RapportTraitement = string.Empty;
 
             // Exécute le IDPBase associé au DesignPatternModel courant
-            this.DPSelectionne.DPImplementation.Execute();
+            this.DPSelectionne.DPImplementation.Execute(this);
         }
 
         /// <summary>

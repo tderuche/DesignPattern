@@ -5,28 +5,19 @@ namespace DPCore.Singleton
     /// <summary>
     /// Implémentation du design pattern "Singleton"
     /// </summary>
-    public class DPSingleton : DPBase
+    public class DPSingleton : IDPBase
     {
         /// <summary>
         /// Execution du traitement
         /// </summary>
         /// <returns>Le rapport de traitement</returns>
-        public override void Execute()
+        public void Execute(IDpAppLogger logger)
         {
-            Database db1 = Database.GetDatabase(this._logger);
+            Database db1 = Database.GetDatabase(logger);
             db1.ExecuterRequete("SELECT Champ FROM Table");
 
-            Database db2 = Database.GetDatabase(this._logger);
+            Database db2 = Database.GetDatabase(logger);
             db2.ExecuterRequete("INSERT INTO Table (Champ) VALUES (Valeur)");
-        }
-
-        /// <summary>
-        /// Constructeur pour la gestion des logs
-        /// </summary>
-        /// <param name="logger">Gestionnaire de logs</param>
-        public DPSingleton(IDpAppLogger logger) : base(logger)
-        {
-
         }
     }
 }

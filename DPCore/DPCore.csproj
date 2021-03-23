@@ -53,7 +53,6 @@
     <Compile Include="CreationalPatterns\AbstractFactory\IConstructeurFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\ISUV.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\ICitadine.cs" />
-    <Compile Include="DPBase.cs" />
     <Compile Include="IDpAppLogger.cs" />
     <Compile Include="StructuralPatterns\Adapter\Personne.cs" />
     <Compile Include="StructuralPatterns\Adapter\AdapterPersonne.cs" />

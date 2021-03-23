@@ -1,4 +1,6 @@
-﻿namespace DPCore
+﻿using DesignPatternApp;
+
+namespace DPCore
 {
     /// <summary>
     /// Interface pour les implémentations des design Patterns
@@ -8,6 +10,6 @@
         /// <summary>
         /// Execution du traitement
         /// </summary>
-        void Execute();
+        void Execute(IDpAppLogger logger);
     }
 }

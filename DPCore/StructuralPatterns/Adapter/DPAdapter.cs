@@ -5,19 +5,19 @@ namespace DPCore.Adapter
     /// <summary>
     /// Implémentation du design pattern "Adapter"
     /// </summary>
-    public class DPAdapter : DPBase
+    public class DPAdapter : IDPBase
     {
         /// <summary>
         /// Execution du traitement
         /// </summary>
         /// <returns>Le rapport de traitement</returns>
-        public override void Execute()
+        public void Execute(IDpAppLogger logger)
         {
             Personne personne = new Personne();
             AdapterPersonne adapterPersonne = new AdapterPersonne(personne);
 
-            this.AfficherNomEtPrenom(adapterPersonne);
-            this.AfficherNomEtPrenom(new Utilisateur("Michael-Jordan"));
+            this.AfficherNomEtPrenom(adapterPersonne, logger);
+            this.AfficherNomEtPrenom(new Utilisateur("Michael-Jordan"), logger);
         }
 
         /// <summary>
@@ -25,18 +25,9 @@ namespace DPCore.Adapter
         /// </summary>
         /// <param name="utilisateur"></param>
         /// <returns>Le rapport de traitement</returns>
-        private void AfficherNomEtPrenom(IUtilisateur utilisateur)
+        private void AfficherNomEtPrenom(IUtilisateur utilisateur, IDpAppLogger logger)
         {
-            this._logger.Log(utilisateur.ObtenirPrenomEtNom());
-        }
-
-        /// <summary>
-        /// Constructeur pour la gestion des logs
-        /// </summary>
-        /// <param name="logger">Gestionnaire de logs</param>
-        public DPAdapter(IDpAppLogger logger) : base(logger)
-        {
-
+            logger.Log(utilisateur.ObtenirPrenomEtNom());
         }
     }
 }

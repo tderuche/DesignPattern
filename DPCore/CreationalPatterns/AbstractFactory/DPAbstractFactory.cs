@@ -5,28 +5,19 @@ namespace DPCore.AbstractFactory
     /// <summary>
     /// Implémentation du design pattern "Abstract Factory"
     /// </summary>
-    public class DPAbstractFactory : DPBase
+    public class DPAbstractFactory : IDPBase
     {
         /// <summary>
         /// Execution du traitement
         /// </summary>
         /// <returns>Le rapport de traitement</returns>
-        public override void Execute()
+        public void Execute(IDpAppLogger logger)
         {
             // Demande à l'usine Peugeot de créer des voitures
-            TraitementAbstractFactory.ConstruireVoitures(new PeugeotFactory(), this._logger);
+            TraitementAbstractFactory.ConstruireVoitures(new PeugeotFactory(), logger);
 
             // Demande à l'usine Renault de créer des voitures
-            TraitementAbstractFactory.ConstruireVoitures(new RenaultFactory(), this._logger);
-        }
-
-        /// <summary>
-        /// Constructeur pour la gestion des logs
-        /// </summary>
-        /// <param name="logger">Gestionnaire de logs</param>
-        public DPAbstractFactory(IDpAppLogger logger) : base(logger)
-        {
-
+            TraitementAbstractFactory.ConstruireVoitures(new RenaultFactory(), logger);
         }
     }
 

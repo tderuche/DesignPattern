@@ -5,19 +5,19 @@ namespace DPCore.Builder
     /// <summary>
     /// Implémentation du design pattern "Builder"
     /// </summary>
-    public class DPBuilder : DPBase
+    public class DPBuilder : IDPBase
     {
         /// <summary>
         /// Execution du traitement
         /// </summary>
-        public override void Execute()
+        public void Execute(IDpAppLogger logger)
         {
             // Création du Chef
-            ChefCuisinier chefCuisinier = new ChefCuisinier(this._logger);
+            ChefCuisinier chefCuisinier = new ChefCuisinier(logger);
 
             // Créations des cuisiniers
-            CuisinierFrancais cuisinierFrancais = new CuisinierFrancais(this._logger);
-            CuisinierItalien cuisinierItalien = new CuisinierItalien(this._logger);
+            CuisinierFrancais cuisinierFrancais = new CuisinierFrancais(logger);
+            CuisinierItalien cuisinierItalien = new CuisinierItalien(logger);
 
             // Plat demandé par le chef cuisinier au cuisinier français
             chefCuisinier.ChangerCuisinier(cuisinierFrancais);
@@ -26,15 +26,6 @@ namespace DPCore.Builder
             //Plat demandé par le chef cuisinier au cuisinier italien
             chefCuisinier.ChangerCuisinier(cuisinierItalien);
             chefCuisinier.DemanderPlatPrincipal();
-        }
-
-        /// <summary>
-        /// Constructeur pour la gestion des logs
-        /// </summary>
-        /// <param name="logger">Gestionnaire de logs</param>
-        public DPBuilder(IDpAppLogger logger) : base(logger)
-        {
-
         }
     }
 }

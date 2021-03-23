@@ -15,9 +15,8 @@ namespace DesignPatternApp.ViewModel
     /// <summary>
     /// Classe de chargement des différents design patterns
     /// </summary>
-    public class LoaderDesignPattern
+    public static class LoaderDesignPattern
     {
-        private readonly IDpAppLogger _logger;
 
         #region Chargement interne
 
@@ -25,10 +24,10 @@ namespace DesignPatternApp.ViewModel
         /// Création du DPAbstractFactory
         /// </summary>
         /// <returns></returns>
-        private DesignPatternModel ObtenirDPAbstractFactory()
+        private static DesignPatternModel ObtenirDPAbstractFactory()
         {
             DesignPatternModel dp = ObtenirDP(nameof(DPAbstractFactory));
-            dp.DPImplementation = new DPAbstractFactory(this._logger);
+            dp.DPImplementation = new DPAbstractFactory();
 
             return dp;
         }
@@ -37,10 +36,10 @@ namespace DesignPatternApp.ViewModel
         /// Création du DPAdapter
         /// </summary>
         /// <returns></returns>
-        private DesignPatternModel ObtenirDPAdapter()
+        private static DesignPatternModel ObtenirDPAdapter()
         {
             DesignPatternModel dp = ObtenirDP(nameof(DPAdapter));
-            dp.DPImplementation = new DPAdapter(this._logger);
+            dp.DPImplementation = new DPAdapter();
 
             return dp;
         }
@@ -49,10 +48,10 @@ namespace DesignPatternApp.ViewModel
         /// Création du DPBuilder
         /// </summary>
         /// <returns></returns>
-        private DesignPatternModel ObtenirDPBuilder()
+        private static DesignPatternModel ObtenirDPBuilder()
         {
             DesignPatternModel dp = ObtenirDP(nameof(DPBuilder));
-            dp.DPImplementation = new DPBuilder(this._logger);
+            dp.DPImplementation = new DPBuilder();
 
             return dp;
         }
@@ -61,10 +60,10 @@ namespace DesignPatternApp.ViewModel
         /// Création du DPFactoryMethod
         /// </summary>
         /// <returns></returns>
-        private DesignPatternModel ObtenirDPFactoryMethod()
+        private static DesignPatternModel ObtenirDPFactoryMethod()
         {
             DesignPatternModel dp = ObtenirDP(nameof(DPFactoryMethod));
-            dp.DPImplementation = new DPFactoryMethod(this._logger);
+            dp.DPImplementation = new DPFactoryMethod();
 
             return dp;
         }
@@ -73,10 +72,10 @@ namespace DesignPatternApp.ViewModel
         /// Création du DPSingleton
         /// </summary>
         /// <returns></returns>
-        private DesignPatternModel ObtenirDPSingleton()
+        private static DesignPatternModel ObtenirDPSingleton()
         {
             DesignPatternModel dp = ObtenirDP(nameof(DPSingleton));
-            dp.DPImplementation = new DPSingleton(this._logger);
+            dp.DPImplementation = new DPSingleton();
 
             return dp;
         }
@@ -85,10 +84,10 @@ namespace DesignPatternApp.ViewModel
         /// Création du DPProxy
         /// </summary>
         /// <returns></returns>
-        private DesignPatternModel ObtenirDPProxy()
+        private static DesignPatternModel ObtenirDPProxy()
         {
             DesignPatternModel dp = ObtenirDP(nameof(DPProxy));
-            dp.DPImplementation = new DPProxy(this._logger);
+            dp.DPImplementation = new DPProxy();
 
             return dp;
         }
@@ -97,10 +96,10 @@ namespace DesignPatternApp.ViewModel
         /// Création du DPAdapter
         /// </summary>
         /// <returns></returns>
-        private DesignPatternModel ObtenirDPFacade()
+        private static DesignPatternModel ObtenirDPFacade()
         {
             DesignPatternModel dp = ObtenirDP(nameof(DPFacade));
-            dp.DPImplementation = new DPFacade(this._logger);
+            dp.DPImplementation = new DPFacade();
 
             return dp;
         }
@@ -110,7 +109,7 @@ namespace DesignPatternApp.ViewModel
         /// </summary>
         /// <param name="typeIDPBase">Le type de la classe d'une implémentation d'un IDPBase</param>
         /// <returns>Le DesignPatternModel souhaité</returns>
-        private DesignPatternModel ObtenirDP(string resourceName)
+        private static DesignPatternModel ObtenirDP(string resourceName)
         {
             return new DesignPatternModel()
             {
@@ -130,7 +129,7 @@ namespace DesignPatternApp.ViewModel
         /// Obtient la liste des Design Patterns
         /// </summary>
         /// <returns></returns>
-        public List<DesignPatternModel> ObtenirListeDP()
+        public static List<DesignPatternModel> ObtenirListeDP()
         {
             List<DesignPatternModel> listeDP = new List<DesignPatternModel>
             {
@@ -144,15 +143,6 @@ namespace DesignPatternApp.ViewModel
             };
 
             return listeDP;
-        }
-
-        /// <summary>
-        /// Constructeur pour la gestion des logs
-        /// </summary>
-        /// <param name="logger">Gestionnaire de logs</param>
-        public LoaderDesignPattern(IDpAppLogger logger)
-        {
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
     }
 }

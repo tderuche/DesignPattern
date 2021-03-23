@@ -5,27 +5,18 @@ namespace DPCore.Proxy
     /// <summary>
     /// Implémentation du design pattern "Proxy"
     /// </summary>
-    public class DPProxy : DPBase
+    public class DPProxy : IDPBase
     {
         /// <summary>
         /// Execution du traitement
         /// </summary>
         /// <returns>Le rapport de traitement</returns>
-        public override void Execute()
+        public void Execute(IDpAppLogger logger)
         {
-            InternetProxy internet = new InternetProxy(this._logger);
+            InternetProxy internet = new InternetProxy(logger);
             internet.Connect("google.fr");
             internet.Connect("siteX.com");
             internet.Connect("isagri.fr");
-        }
-
-        /// <summary>
-        /// Constructeur pour la gestion des logs
-        /// </summary>
-        /// <param name="logger">Gestionnaire de logs</param>
-        public DPProxy(IDpAppLogger logger) : base(logger)
-        {
-
         }
     }
 }
