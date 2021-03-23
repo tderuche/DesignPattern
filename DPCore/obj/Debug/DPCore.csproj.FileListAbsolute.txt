@@ -1,6 +1,0 @@
-C:\Users\tderuche\OneDrive - GROUPE ISAGRI\Perso\DesignPatternsC#\DPApp\DPCore\bin\Debug\DPCore.dll
-C:\Users\tderuche\OneDrive - GROUPE ISAGRI\Perso\DesignPatternsC#\DPApp\DPCore\bin\Debug\DPCore.pdb
-C:\Users\tderuche\OneDrive - GROUPE ISAGRI\Perso\DesignPatternsC#\DPApp\DPCore\obj\Debug\DPCore.csprojAssemblyReference.cache
-C:\Users\tderuche\OneDrive - GROUPE ISAGRI\Perso\DesignPatternsC#\DPApp\DPCore\obj\Debug\DPCore.csproj.CoreCompileInputs.cache
-C:\Users\tderuche\OneDrive - GROUPE ISAGRI\Perso\DesignPatternsC#\DPApp\DPCore\obj\Debug\DPCore.dll
-C:\Users\tderuche\OneDrive - GROUPE ISAGRI\Perso\DesignPatternsC#\DPApp\DPCore\obj\Debug\DPCore.pdb
