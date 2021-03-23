@@ -1,0 +1,65 @@
+﻿<Window x:Class="DesignPatternApp.View.DiagrammeEAView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesignPatternApp.View"
+        mc:Ignorable="d"
+        Title="DiagrammeEAView"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="32"
+                      ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}" />
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"
+              Background="{StaticResource Violet}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1"
+                  HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Foreground="White"
+                       FontSize="16"
+                       Content="{Binding Titre}">                    
+                </Label>
+            </Grid>
+            <DockPanel Grid.Column="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left">
+                <Button x:Name="CloseButton"
+                        Content="X"
+                        Click="CloseButton_Click"
+                        Height="20"
+                        Width="20"
+                        WindowChrome.IsHitTestVisibleInChrome="True"
+                        DockPanel.Dock="Right"
+                        Background="{StaticResource GrisFonce}"
+                        Foreground="White" />
+            </DockPanel>
+        </Grid>
+        <Grid Grid.Row="1" Background="{StaticResource GrisFonce}">
+        <Image x:Name="ImageArchi"
+               Source="{Binding Model.ImageEA}"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
