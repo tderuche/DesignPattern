@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1259
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPCore", "DPCore\DPCore.csproj", "{A9A62A24-39D1-4D0D-820F-3C926C0CBD0B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternApp", "DesignPatternApp\DesignPatternApp.csproj", "{DDA4AAA0-8007-4C01-89EE-768F9ACADF67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DPCore", "DPCore\DPCore.csproj", "{A9A62A24-39D1-4D0D-820F-3C926C0CBD0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
