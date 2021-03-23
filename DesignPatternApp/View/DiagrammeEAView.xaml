@@ -25,7 +25,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0"
-              Background="{StaticResource Violet}">
+              Background="{StaticResource CouleurTheme}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="30" />
                 <ColumnDefinition Width="*" />
@@ -36,7 +36,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <Label Foreground="White"
+                <Label Foreground="{StaticResource CouleurPolice}"
                        FontSize="16"
                        Content="{Binding Titre}">                    
                 </Label>
@@ -51,11 +51,11 @@
                         Width="20"
                         WindowChrome.IsHitTestVisibleInChrome="True"
                         DockPanel.Dock="Right"
-                        Background="{StaticResource GrisFonce}"
-                        Foreground="White" />
+                        Background="{StaticResource CouleurFond}"
+                        Foreground="{StaticResource CouleurPolice}" />
             </DockPanel>
         </Grid>
-        <Grid Grid.Row="1" Background="{StaticResource GrisFonce}">
+        <Grid Grid.Row="1" Background="{StaticResource CouleurFond}">
         <Image x:Name="ImageArchi"
                Source="{Binding Model.ImageEA}"
                HorizontalAlignment="Center"

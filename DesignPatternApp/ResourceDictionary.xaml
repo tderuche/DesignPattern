@@ -2,11 +2,11 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:DesignPatternApp">
     <!--Couleur thème principal-->
-        <SolidColorBrush x:Key="Violet"
+        <SolidColorBrush x:Key="CouleurTheme"
                          Color="#464775" />
-        <SolidColorBrush x:Key="GrisClair"
+        <SolidColorBrush x:Key="CouleurMenu"
                          Color="#2D2C2C" />
-        <SolidColorBrush x:Key="GrisFonce"
+        <SolidColorBrush x:Key="CouleurFond"
                          Color="#201F1F" />
         <SolidColorBrush x:Key="CouleurPolice"
                          Color="White" />

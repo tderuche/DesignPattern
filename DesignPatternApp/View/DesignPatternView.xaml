@@ -242,7 +242,7 @@
         </Grid.RowDefinitions>
         <Grid x:Name="grid2"
               Grid.Row="0"
-              Background="{StaticResource Violet}">
+              Background="{StaticResource CouleurTheme}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="30" />
                 <ColumnDefinition Width="*" />
@@ -253,7 +253,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <Label Foreground="White"
+                <Label Foreground="{StaticResource CouleurPolice}"
                        FontSize="16">
                     Les Design Patterns en C#
                 </Label>
@@ -268,8 +268,8 @@
                         Width="20"
                         WindowChrome.IsHitTestVisibleInChrome="True"
                         DockPanel.Dock="Right"
-                        Background="{StaticResource GrisFonce}"
-                        Foreground="White" />
+                        Background="{StaticResource CouleurFond}"
+                        Foreground="{StaticResource CouleurPolice}" />
             </DockPanel>
         </Grid>
         <Grid x:Name="grid3"
@@ -280,7 +280,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0"
-                  Background="{StaticResource GrisClair}">
+                  Background="{StaticResource CouleurMenu}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -294,7 +294,7 @@
                         <ColumnDefinition Width="20" />
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0">
-                        <Label Foreground="White"
+                        <Label Foreground="{StaticResource CouleurPolice}"
                                FontWeight="Bold"
                                FontSize="14">Liste des Design Patterns</Label>
                     </StackPanel>
@@ -314,8 +314,8 @@
                               SelectedIndex="0"
                               SelectedItem="{Binding DPSelectionne}"
                               Height="380"
-                              Background="{StaticResource GrisClair}"
-                              BorderBrush="{StaticResource Violet}"
+                              Background="{StaticResource CouleurMenu}"
+                              BorderBrush="{StaticResource CouleurTheme}"
                               BorderThickness="0,0,0,0">
                         <!--<ScrollViewer Name="svListDP"
                                               Style="{StaticResource FavsScrollViewer}" />-->
@@ -323,7 +323,7 @@
                             <DataTemplate>
                                 <StackPanel>
                                     <Label Content="{Binding Nom}"
-                                           Foreground="White" />
+                                           Foreground="{StaticResource CouleurPolice}" />
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -331,7 +331,7 @@
                 </StackPanel>
             </Grid>
             <Grid Grid.Column="1"
-                  Background="{StaticResource GrisFonce}">
+                  Background="{StaticResource CouleurFond}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -340,7 +340,7 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackPanel Grid.Row="0">
-                    <Label Foreground="White"
+                    <Label Foreground="{StaticResource CouleurPolice}"
                            FontSize="24"
                            Content="{Binding DPSelectionne.Nom}"
                            FontWeight="Bold" />
@@ -360,7 +360,7 @@
                             <RowDefinition Height="25" />
                         </Grid.RowDefinitions>
                         <WrapPanel Grid.Row="0">
-                            <TextBlock Foreground="White"
+                            <TextBlock Foreground="{StaticResource CouleurPolice}"
                                        TextWrapping="WrapWithOverflow"
                                        Text="{Binding DPSelectionne.Description}" />
                         </WrapPanel>
@@ -409,8 +409,8 @@
                            HorizontalAlignment="Left"
                            Margin="10,0,0,0">
                     <Button Content="Exécuter / Débuguer"
-                            Background="{StaticResource Violet}"
-                            Foreground="White"
+                            Background="{StaticResource CouleurTheme}"
+                            Foreground="{StaticResource CouleurPolice}"
                             Height="25"
                             Width="150"
                             Command="{Binding CmdExecuteDP}" />
@@ -434,8 +434,8 @@
                         <StackPanel Grid.Row="1"
                                     Margin="10">
                             <TextBlock Height="200"
-                                       Background="{StaticResource GrisClair}"
-                                       Foreground="White"
+                                       Background="{StaticResource CouleurMenu}"
+                                       Foreground="{StaticResource CouleurPolice}"
                                        Text="{Binding RapportTraitement}" />
                         </StackPanel>
                     </Grid>
@@ -447,18 +447,19 @@
                         <StackPanel Grid.Row="0">
                             <Label Foreground="{StaticResource CouleurPolice}"
                                    Content="Architecture"
-                                   Background="{StaticResource Violet}"
+                                   Background="{StaticResource CouleurTheme}"
                                    Margin="0,10,10,10" />
-                            <StackPanel>
-                                <Button Background="Transparent"
+                        </StackPanel>
+                        <StackPanel Grid.Row="1">
+                            <Button Background="Transparent"
                                         Command="{Binding CmdShowDpEA}"
-                                        ToolTip="Cliquez moi :)">
-                                    <Image x:Name="ImageArchi"
+                                        ToolTip="Cliquez moi :)"
+                                    Margin="0,0,10,0">
+                                <Image x:Name="ImageArchi"
                                            Source="{Binding DPSelectionne.ImageArchi}"
                                            MaxWidth="125"
-                                           Margin="0,0,10,0" />
-                                </Button>
-                            </StackPanel>
+                                           Margin="0,0,0,0" />
+                            </Button>
                         </StackPanel>
                     </Grid>
                 </Grid>
