@@ -10,7 +10,7 @@ namespace DPCore.Adapter
         /// <summary>
         /// Execution du traitement
         /// </summary>
-        /// <returns>Le rapport de traitement</returns>
+        /// <param name="logger">Gestionnaire de logs</param>
         public void Execute(IDpAppLogger logger)
         {
             Personne personne = new Personne();

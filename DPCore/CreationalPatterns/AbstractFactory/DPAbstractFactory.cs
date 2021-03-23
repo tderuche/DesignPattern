@@ -10,7 +10,7 @@ namespace DPCore.AbstractFactory
         /// <summary>
         /// Execution du traitement
         /// </summary>
-        /// <returns>Le rapport de traitement</returns>
+        /// <param name="logger">Gestionnaire de logs</param>
         public void Execute(IDpAppLogger logger)
         {
             // Demande à l'usine Peugeot de créer des voitures
@@ -24,7 +24,7 @@ namespace DPCore.AbstractFactory
     /// <summary>
     /// Traitement réalisé sur une factory
     /// </summary>
-    static class TraitementAbstractFactory
+    internal static class TraitementAbstractFactory
     {
         /// <summary>
         /// Construit les voitures et ce peu importe le constructeur

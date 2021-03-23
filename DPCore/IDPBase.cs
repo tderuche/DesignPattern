@@ -10,6 +10,7 @@ namespace DPCore
         /// <summary>
         /// Execution du traitement
         /// </summary>
+        /// <param name="logger">Gestionnaire de logs</param>
         void Execute(IDpAppLogger logger);
     }
 }

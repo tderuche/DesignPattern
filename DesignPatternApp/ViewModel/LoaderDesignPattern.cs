@@ -17,7 +17,6 @@ namespace DesignPatternApp.ViewModel
     /// </summary>
     public static class LoaderDesignPattern
     {
-
         #region Chargement interne
 
         /// <summary>

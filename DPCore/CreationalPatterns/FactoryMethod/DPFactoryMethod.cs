@@ -10,6 +10,7 @@ namespace DPCore.FactoryMethod
         /// <summary>
         /// Execution du traitement
         /// </summary>
+        /// <param name="logger">Gestionnaire de logs</param>
         public void Execute(IDpAppLogger logger)
         {
             // Création d'une moto
