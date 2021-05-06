@@ -106,6 +106,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Permet de diminuer les dépendances chaotiques entre les objets. Ce patron restreint les communications directes entre les objets et les force à collaborer uniquement via un objet médiateur..
+        /// </summary>
+        internal static string DPMediator {
+            get {
+                return ResourceManager.GetString("DPMediator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Permet de fournir un substitut d’un objet. Une procuration donne le contrôle sur l’objet original, vous permettant d’effectuer des manipulations avant ou après que la demande ne lui parvienne..
         /// </summary>
         internal static string DPProxy {

@@ -132,6 +132,9 @@
   <data name="DPFactoryMethod" xml:space="preserve">
     <value>Définit une interface pour la création d’objets dans une classe mère, mais délègue aux sous-classes le choix des types d’objets à créer.</value>
   </data>
+  <data name="DPMediator" xml:space="preserve">
+    <value>Permet de diminuer les dépendances chaotiques entre les objets. Ce patron restreint les communications directes entre les objets et les force à collaborer uniquement via un objet médiateur.</value>
+  </data>
   <data name="DPProxy" xml:space="preserve">
     <value>Permet de fournir un substitut d’un objet. Une procuration donne le contrôle sur l’objet original, vous permettant d’effectuer des manipulations avant ou après que la demande ne lui parvienne.</value>
   </data>

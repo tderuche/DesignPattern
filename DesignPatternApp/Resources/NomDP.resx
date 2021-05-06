@@ -132,6 +132,9 @@
   <data name="DPFactoryMethod" xml:space="preserve">
     <value>Factory Method</value>
   </data>
+  <data name="DPMediator" xml:space="preserve">
+    <value>Mediator</value>
+  </data>
   <data name="DPProxy" xml:space="preserve">
     <value>Proxy</value>
   </data>

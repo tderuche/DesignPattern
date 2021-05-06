@@ -106,6 +106,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mediator.
+        /// </summary>
+        internal static string DPMediator {
+            get {
+                return ResourceManager.GetString("DPMediator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Proxy.
         /// </summary>
         internal static string DPProxy {

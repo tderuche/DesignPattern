@@ -106,6 +106,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://refactoring.guru/fr/design-patterns/mediator/csharp/example#lang-features.
+        /// </summary>
+        internal static string DPMediator {
+            get {
+                return ResourceManager.GetString("DPMediator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://refactoring.guru/fr/design-patterns/proxy/csharp/example#lang-features.
         /// </summary>
         internal static string DPProxy {

@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BehavioralPatterns\Mediator\InstagramUser.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\User.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\TwitterUser.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\DPMediator.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\IReseauSocialMediator.cs" />
+    <Compile Include="BehavioralPatterns\Mediator\InstagramTwitterMediator.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\DPAbstractFactory.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\IVoiture.cs" />
     <Compile Include="CreationalPatterns\AbstractFactory\PeugeotFactory.cs" />
@@ -87,7 +93,6 @@
     <Compile Include="CreationalPatterns\Singleton\DPSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BehavioralPatterns\" />
     <Folder Include="CreationalPatterns\Prototype\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

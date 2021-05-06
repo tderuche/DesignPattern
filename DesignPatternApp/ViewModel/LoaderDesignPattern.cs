@@ -4,6 +4,7 @@ using System.Windows.Media.Imaging;
 using DesignPatternApp.Model;
 using DPCore.AbstractFactory;
 using DPCore.Adapter;
+using DPCore.BehavioralPatterns.Mediator;
 using DPCore.Builder;
 using DPCore.FactoryMethod;
 using DPCore.Proxy;
@@ -103,6 +104,14 @@ namespace DesignPatternApp.ViewModel
             return dp;
         }
 
+        private static DesignPatternModel ObtenirDPMediator()
+        {
+            DesignPatternModel dp = ObtenirDP(nameof(DPMediator));
+            dp.DPImplementation = new DPMediator();
+
+            return dp;
+        }
+
         /// <summary>
         /// Obtient la description d'un DesignPatternModel
         /// </summary>
@@ -138,7 +147,8 @@ namespace DesignPatternApp.ViewModel
                 ObtenirDPFactoryMethod(),
                 ObtenirDPSingleton(),
                 ObtenirDPProxy(),
-                ObtenirDPFacade()
+                ObtenirDPFacade(),
+                ObtenirDPMediator()
             };
 
             return listeDP;

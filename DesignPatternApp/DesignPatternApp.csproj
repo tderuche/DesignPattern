@@ -199,5 +199,11 @@
   <ItemGroup>
     <Resource Include="Resources\Pictures\EA\DPFacade.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\Logos\DPMediator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\EA\DPMediator.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

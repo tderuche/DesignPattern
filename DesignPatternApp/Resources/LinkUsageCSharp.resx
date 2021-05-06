@@ -132,6 +132,9 @@
   <data name="DPFactoryMethod" xml:space="preserve">
     <value>https://refactoring.guru/design-patterns/prototype/csharp/example#lang-features</value>
   </data>
+  <data name="DPMediator" xml:space="preserve">
+    <value>https://refactoring.guru/fr/design-patterns/mediator/csharp/example#lang-features</value>
+  </data>
   <data name="DPProxy" xml:space="preserve">
     <value>https://refactoring.guru/fr/design-patterns/proxy/csharp/example#lang-features</value>
   </data>

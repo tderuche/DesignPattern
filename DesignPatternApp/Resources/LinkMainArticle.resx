@@ -132,6 +132,9 @@
   <data name="DPFactoryMethod" xml:space="preserve">
     <value>https://refactoring.guru/design-patterns/factory-method</value>
   </data>
+  <data name="DPMediator" xml:space="preserve">
+    <value>https://refactoring.guru/fr/design-patterns/mediator</value>
+  </data>
   <data name="DPProxy" xml:space="preserve">
     <value>https://refactoring.guru/fr/design-patterns/proxy</value>
   </data>
