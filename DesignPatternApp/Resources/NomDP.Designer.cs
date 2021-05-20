@@ -88,6 +88,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Composite.
+        /// </summary>
+        internal static string DPComposite {
+            get {
+                return ResourceManager.GetString("DPComposite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Facade.
         /// </summary>
         internal static string DPFacade {

@@ -126,6 +126,9 @@
   <data name="DPBuilder" xml:space="preserve">
     <value>https://refactoring.guru/design-patterns/builder/csharp/example#lang-features</value>
   </data>
+  <data name="DPComposite" xml:space="preserve">
+    <value>https://refactoring.guru/fr/design-patterns/composite/csharp/example#lang-features</value>
+  </data>
   <data name="DPFacade" xml:space="preserve">
     <value>https://refactoring.guru/fr/design-patterns/facade/csharp/example#lang-features</value>
   </data>

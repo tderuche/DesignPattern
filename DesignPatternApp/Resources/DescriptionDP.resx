@@ -126,6 +126,9 @@
   <data name="DPBuilder" xml:space="preserve">
     <value>Permet de construire des objets complexes étape par étape. Ce patron permet de construire différentes variations ou représentations d’un objet en utilisant le même code de construction.</value>
   </data>
+  <data name="DPComposite" xml:space="preserve">
+    <value>Permet d'agencer les objets dans des arborescences afin de pouvoir traiter celles-ci comme des objets individuels.</value>
+  </data>
   <data name="DPFacade" xml:space="preserve">
     <value>Procure une interface qui offre un accès simplifié à une librairie, un framework ou à n’importe quel ensemble complexe de classes.</value>
   </data>

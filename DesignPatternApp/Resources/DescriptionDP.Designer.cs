@@ -88,6 +88,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Permet d&apos;agencer les objets dans des arborescences afin de pouvoir traiter celles-ci comme des objets individuels..
+        /// </summary>
+        internal static string DPComposite {
+            get {
+                return ResourceManager.GetString("DPComposite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Procure une interface qui offre un accès simplifié à une librairie, un framework ou à n’importe quel ensemble complexe de classes..
         /// </summary>
         internal static string DPFacade {

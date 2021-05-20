@@ -9,6 +9,7 @@ using DPCore.Builder;
 using DPCore.FactoryMethod;
 using DPCore.Proxy;
 using DPCore.Singleton;
+using DPCore.StructuralPatterns.Composite;
 using DPCore.StructuralPatterns.Facade;
 
 namespace DesignPatternApp.ViewModel
@@ -111,6 +112,13 @@ namespace DesignPatternApp.ViewModel
 
             return dp;
         }
+        private static DesignPatternModel ObtenirDPComposite()
+        {
+            DesignPatternModel dp = ObtenirDP(nameof(DPComposite));
+            dp.DPImplementation = new DPComposite();
+
+            return dp;
+        }
 
         /// <summary>
         /// Obtient la description d'un DesignPatternModel
@@ -148,7 +156,8 @@ namespace DesignPatternApp.ViewModel
                 ObtenirDPSingleton(),
                 ObtenirDPProxy(),
                 ObtenirDPFacade(),
-                ObtenirDPMediator()
+                ObtenirDPMediator(),
+                ObtenirDPComposite()
             };
 
             return listeDP;

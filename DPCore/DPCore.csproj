@@ -80,6 +80,11 @@
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="IDPBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StructuralPatterns\Composite\Developpeur.cs" />
+    <Compile Include="StructuralPatterns\Composite\DPComposite.cs" />
+    <Compile Include="StructuralPatterns\Composite\ISalarie.cs" />
+    <Compile Include="StructuralPatterns\Composite\Manager.cs" />
+    <Compile Include="StructuralPatterns\Composite\Testeur.cs" />
     <Compile Include="StructuralPatterns\Facade\Cercle.cs" />
     <Compile Include="StructuralPatterns\Facade\DPFacade.cs" />
     <Compile Include="StructuralPatterns\Facade\FormeCreateur.cs" />
