@@ -126,6 +126,9 @@
   <data name="DPBuilder" xml:space="preserve">
     <value>Builder</value>
   </data>
+  <data name="DPChainOfResponsibility" xml:space="preserve">
+    <value>Chain Of Responsibility</value>
+  </data>
   <data name="DPComposite" xml:space="preserve">
     <value>Composite</value>
   </data>

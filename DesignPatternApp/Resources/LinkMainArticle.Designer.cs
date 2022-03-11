@@ -88,6 +88,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://refactoring.guru/fr/design-patterns/chain-of-responsibility.
+        /// </summary>
+        internal static string DPChainOfResponsibility {
+            get {
+                return ResourceManager.GetString("DPChainOfResponsibility", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://refactoring.guru/fr/design-patterns/composite.
         /// </summary>
         internal static string DPComposite {

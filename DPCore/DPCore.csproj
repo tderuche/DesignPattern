@@ -42,6 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\ConseillerSL.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\DeveloppeurOutils.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\DeveloppeurCompta.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\DPChainOfResponsibility.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\Maintenance.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\IMaintenanceManager.cs" />
+    <Compile Include="BehavioralPatterns\ChainOfResponsibility\MaintenanceManagerBase.cs" />
     <Compile Include="BehavioralPatterns\Mediator\InstagramUser.cs" />
     <Compile Include="BehavioralPatterns\Mediator\User.cs" />
     <Compile Include="BehavioralPatterns\Mediator\TwitterUser.cs" />

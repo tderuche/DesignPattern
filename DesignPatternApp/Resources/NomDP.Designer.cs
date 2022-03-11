@@ -88,6 +88,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Chain Of Responsibility.
+        /// </summary>
+        internal static string DPChainOfResponsibility {
+            get {
+                return ResourceManager.GetString("DPChainOfResponsibility", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Composite.
         /// </summary>
         internal static string DPComposite {

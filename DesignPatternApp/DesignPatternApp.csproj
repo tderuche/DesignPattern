@@ -211,5 +211,11 @@
   <ItemGroup>
     <Resource Include="Resources\Pictures\EA\DPComposite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\Logos\DPChainOfResponsibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\EA\DPChainOfResponsibility.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

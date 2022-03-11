@@ -126,6 +126,9 @@
   <data name="DPBuilder" xml:space="preserve">
     <value>Permet de construire des objets complexes étape par étape. Ce patron permet de construire différentes variations ou représentations d’un objet en utilisant le même code de construction.</value>
   </data>
+  <data name="DPChainOfResponsibility" xml:space="preserve">
+    <value>Permet de faire circuler une demande dans une chaîne de handlers. Lorsqu'un handler reçoit une demande, il décide de la traiter ou de l’envoyer au handler suivant de la chaîne.</value>
+  </data>
   <data name="DPComposite" xml:space="preserve">
     <value>Permet d'agencer les objets dans des arborescences afin de pouvoir traiter celles-ci comme des objets individuels.</value>
   </data>

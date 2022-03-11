@@ -4,6 +4,7 @@ using System.Windows.Media.Imaging;
 using DesignPatternApp.Model;
 using DPCore.AbstractFactory;
 using DPCore.Adapter;
+using DPCore.BehavioralPatterns.ChainOfResponsibility;
 using DPCore.BehavioralPatterns.Mediator;
 using DPCore.Builder;
 using DPCore.FactoryMethod;
@@ -119,6 +120,13 @@ namespace DesignPatternApp.ViewModel
 
             return dp;
         }
+        private static DesignPatternModel ObtenirDPChainOfResponsibility()
+        {
+            DesignPatternModel dp = ObtenirDP(nameof(DPChainOfResponsibility));
+            dp.DPImplementation = new DPChainOfResponsibility();
+
+            return dp;
+        }
 
         /// <summary>
         /// Obtient la description d'un DesignPatternModel
@@ -157,7 +165,8 @@ namespace DesignPatternApp.ViewModel
                 ObtenirDPProxy(),
                 ObtenirDPFacade(),
                 ObtenirDPMediator(),
-                ObtenirDPComposite()
+                ObtenirDPComposite(),
+                ObtenirDPChainOfResponsibility()
             };
 
             return listeDP;

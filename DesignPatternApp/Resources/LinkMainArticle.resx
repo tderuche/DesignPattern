@@ -126,6 +126,9 @@
   <data name="DPBuilder" xml:space="preserve">
     <value>https://refactoring.guru/design-patterns/builder</value>
   </data>
+  <data name="DPChainOfResponsibility" xml:space="preserve">
+    <value>https://refactoring.guru/fr/design-patterns/chain-of-responsibility</value>
+  </data>
   <data name="DPComposite" xml:space="preserve">
     <value>https://refactoring.guru/fr/design-patterns/composite</value>
   </data>

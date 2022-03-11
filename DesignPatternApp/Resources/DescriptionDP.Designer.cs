@@ -88,6 +88,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Permet de faire circuler une demande dans une chaîne de handlers. Lorsqu&apos;un handler reçoit une demande, il décide de la traiter ou de l’envoyer au handler suivant de la chaîne..
+        /// </summary>
+        internal static string DPChainOfResponsibility {
+            get {
+                return ResourceManager.GetString("DPChainOfResponsibility", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Permet d&apos;agencer les objets dans des arborescences afin de pouvoir traiter celles-ci comme des objets individuels..
         /// </summary>
         internal static string DPComposite {
