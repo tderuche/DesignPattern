@@ -106,6 +106,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://refactoring.guru/fr/design-patterns/factory-method/csharp/example#example-0.
+        /// </summary>
+        internal static string DPDecorator {
+            get {
+                return ResourceManager.GetString("DPDecorator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://refactoring.guru/fr/design-patterns/facade/csharp/example#example-0.
         /// </summary>
         internal static string DPFacade {

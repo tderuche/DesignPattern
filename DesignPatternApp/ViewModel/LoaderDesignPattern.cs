@@ -11,6 +11,7 @@ using DPCore.FactoryMethod;
 using DPCore.Proxy;
 using DPCore.Singleton;
 using DPCore.StructuralPatterns.Composite;
+using DPCore.StructuralPatterns.Decorator;
 using DPCore.StructuralPatterns.Facade;
 
 namespace DesignPatternApp.ViewModel
@@ -127,6 +128,13 @@ namespace DesignPatternApp.ViewModel
 
             return dp;
         }
+        private static DesignPatternModel ObtenirDPDecorator()
+        {
+            DesignPatternModel dp = ObtenirDP(nameof(DPDecorator));
+            dp.DPImplementation = new DPDecorator();
+
+            return dp;
+        }
 
         /// <summary>
         /// Obtient la description d'un DesignPatternModel
@@ -166,7 +174,8 @@ namespace DesignPatternApp.ViewModel
                 ObtenirDPFacade(),
                 ObtenirDPMediator(),
                 ObtenirDPComposite(),
-                ObtenirDPChainOfResponsibility()
+                ObtenirDPChainOfResponsibility(),
+                ObtenirDPDecorator()
             };
 
             return listeDP;

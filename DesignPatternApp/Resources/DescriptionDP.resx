@@ -132,6 +132,9 @@
   <data name="DPComposite" xml:space="preserve">
     <value>Permet d'agencer les objets dans des arborescences afin de pouvoir traiter celles-ci comme des objets individuels.</value>
   </data>
+  <data name="DPDecorator" xml:space="preserve">
+    <value>Permet d’affecter dynamiquement de nouveaux comportements à des objets en les plaçant dans des emballeurs qui implémentent ces comportements.</value>
+  </data>
   <data name="DPFacade" xml:space="preserve">
     <value>Procure une interface qui offre un accès simplifié à une librairie, un framework ou à n’importe quel ensemble complexe de classes.</value>
   </data>

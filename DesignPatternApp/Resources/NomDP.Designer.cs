@@ -106,6 +106,15 @@ namespace DesignPatternApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Decorator.
+        /// </summary>
+        internal static string DPDecorator {
+            get {
+                return ResourceManager.GetString("DPDecorator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Facade.
         /// </summary>
         internal static string DPFacade {

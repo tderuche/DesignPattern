@@ -418,7 +418,8 @@
                         <TextBlock Foreground="{StaticResource CouleurPolice}"
                                    TextWrapping="WrapWithOverflow"
                                    Text="(Mettre un point d'arrêt dans ExecuteDP de DesignPatternViewModel pour débuguer)"
-                                   FontStyle="Italic" />
+                                   FontStyle="Italic"
+                                   Margin="0,5,0,0" />
                     </WrapPanel>
                 </DockPanel>
                 <Grid Grid.Row="4">

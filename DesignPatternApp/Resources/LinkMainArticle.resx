@@ -132,6 +132,9 @@
   <data name="DPComposite" xml:space="preserve">
     <value>https://refactoring.guru/fr/design-patterns/composite</value>
   </data>
+  <data name="DPDecorator" xml:space="preserve">
+    <value>https://refactoring.guru/fr/design-patterns/factory-method</value>
+  </data>
   <data name="DPFacade" xml:space="preserve">
     <value>https://refactoring.guru/fr/design-patterns/facade</value>
   </data>

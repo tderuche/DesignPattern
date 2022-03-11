@@ -92,6 +92,12 @@
     <Compile Include="StructuralPatterns\Composite\ISalarie.cs" />
     <Compile Include="StructuralPatterns\Composite\Manager.cs" />
     <Compile Include="StructuralPatterns\Composite\Testeur.cs" />
+    <Compile Include="StructuralPatterns\Decorator\DPDecorator.cs" />
+    <Compile Include="StructuralPatterns\Decorator\IPersonne.cs" />
+    <Compile Include="StructuralPatterns\Decorator\Personne.cs" />
+    <Compile Include="StructuralPatterns\Decorator\PersonneDecorator.cs" />
+    <Compile Include="StructuralPatterns\Decorator\PersonneAvecChapeau.cs" />
+    <Compile Include="StructuralPatterns\Decorator\PersonneAvecLunettes.cs" />
     <Compile Include="StructuralPatterns\Facade\Cercle.cs" />
     <Compile Include="StructuralPatterns\Facade\DPFacade.cs" />
     <Compile Include="StructuralPatterns\Facade\FormeCreateur.cs" />
